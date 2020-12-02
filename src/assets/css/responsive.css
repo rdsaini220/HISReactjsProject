@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1360px){
+    .backd {
+        background-size: 70% 74% !important;
+        background-position: 110% -128px !important;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1368px) and (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+    }
+}
+@media(max-width: 991px){
+    .container{
+        max-width: 100%;
+    }
+}
+
+
