@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Container,Row} from 'react-bootstrap';
 import {InnerArea} from './WebBase';
-import {FormCard,IdCard} from './FormCard';
-import {IdData} from './WebData';
+import FormCard from './FormCard';
 var heading = "We Don't Just Build IT Solutions";
 
 class ContactForm extends Component{
@@ -22,8 +21,35 @@ class ContactForm extends Component{
                                 <div className="RightformColumn">
                                     <h3 className="h_head text-white mb-4">Say Hi!</h3>
                                     {
-                                        IdData.map((val,index) => {
-                                            return <IdCard iconClass={val.iconClass} text={val.text} userid={val.userid} />
+                                        this.props.ContactData.map( val => {
+											const {email,skype,watsapp} = val;  
+                                            return (
+                                                <>
+                                                <div className="emailid-block rows">
+                                                            <a href={"mailto:"+email} className="transition">
+                                                                <i className="flaticon-envelope"></i> 
+                                                                <span className="small-text rows">mail to our sales department</span>
+                                                                <span className="large-text rows">{email}</span>
+                                                            </a>
+                                                        </div>
+                            
+                                                        <div className="emailid-block rows">
+                                                            <a href={"skype:"+skype} className="transition">
+                                                                <i className="flaticon-chat"></i> 
+                                                                <span className="small-text rows">Our Skype Id</span>
+                                                                <span className="large-text rows">{skype}</span>
+                                                            </a>
+                                                        </div>
+                            
+                                                        <div className="emailid-block rows">
+                                                            <a target="_blank" href={"https://web.whatsapp.com/send?phone=+91"+watsapp+"%20&amp;text=Helpful%20Insight%20Solution"} className="transition">
+                                                                <i className="flaticon-24-hours-phone-service"></i> 
+                                                                <span className="small-text rows">Message On Whatsapp</span>
+                                                                <span className="large-text rows">+91-{watsapp}</span>
+                                                            </a>
+                                                        </div>
+                                            </>    
+                                            )                                                  
                                         })
                                     }
                                 </div>
@@ -37,25 +63,32 @@ class ContactForm extends Component{
 
 }
 
-class Contact extends Component{
+class Contact extends Component{	
     render(){   
        return (<>
             <InnerArea ineerheading={heading} />
             <section className="contact-info-section">
                 <Container>
                     <div className="title-box text-center mb-5">
-                        <h1>A Monthly Project Fee Price Plans</h1>
-                        <div className="text">For genereal enquires you can touch with our front desk supporting team <br/> at 
-                        <a href="#" className="text-primary">info@example.com</a> or call on 
-                        <a href="#" className="text-primary">+8.555.55.55</a></div>
+                        <h1>A Monthly Project Fee Price Plans</h1>                        
+                        {
+                            this.props.contactIds.map(val => {
+                                const {email, watsapp} = val;  
+                                return (<>
+                                    <div className="text">For genereal enquires you can touch with our front desk supporting team <br/> at 
+                                        <a href={"mailto:"+email} className="text-primary"> {email}</a> or call on  
+                                        <a href={"tel:"+watsapp} className="text-primary"> (+91) {watsapp}</a>
+                                     </div>
+                                </>)
+                            })
+                        }
                     </div>
-                    <ContactForm className={'mb-0'} />
+                    <ContactForm className={'mb-0'} ContactData={this.props.contactIds} />
                 </Container>
              </section>
             <div className="clearfix"></div>
     	</>
     )};
-
 }
 
 export {ContactForm,Contact};

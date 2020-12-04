@@ -16,31 +16,31 @@ class SecHeading extends Component{
 	componentDidMount() {
         //Header
 		// FOR TESTIMONIAL TITLE 
-		var fancyHeading = document.getElementsByClassName('fancy')[0];
-		var letters = fancyHeading.textContent.split('');
-		var content = letters.map((val, i) => {
-			let delay = Math.floor((Math.random() * 1000) + 1);
-			return ('<span style="animation-delay: '+ delay + 'ms">'
-					+ val +
-					'</span>');
-		});
+		// var fancyHeading = document.getElementsByClassName('fancy')[0];
+		// var letters = fancyHeading.textContent.split('');
+		// var content = letters.map((val, i) => {
+		// 	let delay = Math.floor((Math.random() * 1000) + 1);
+		// 	return ('<span style="animation-delay: '+ delay + 'ms">'
+		// 			+ val +
+		// 			'</span>');
+		// });
 
-		// FOR OUR WORK PROCESS TITLE
-		var workHeading = document.getElementsByClassName('workHeading')[0];
-		var workLetters = workHeading.textContent.split('');
+		// // FOR OUR WORK PROCESS TITLE
+		// var workHeading = document.getElementsByClassName('workHeading')[0];
+		// var workLetters = workHeading.textContent.split('');
 
-		var workContent = workLetters.map((val, i) => {
-			let delay = Math.floor((Math.random() * 1000) + 1);
-			return ('<span style="animation-delay: '+ delay + 'ms">'
-					+ val +
-					'</span>');
-		});
+		// var workContent = workLetters.map((val, i) => {
+		// 	let delay = Math.floor((Math.random() * 1000) + 1);
+		// 	return ('<span style="animation-delay: '+ delay + 'ms">'
+		// 			+ val +
+		// 			'</span>');
+		// });
 
-		workHeading.innerHTML = "";
+		// workHeading.innerHTML = "";
 
-		for (var i = 0; i < workContent.length; i++) {
-			workHeading.innerHTML += workContent[i];
-		};				
+		// for (var i = 0; i < workContent.length; i++) {
+		// 	workHeading.innerHTML += workContent[i];
+		// };				
 	}	
     render(){     		
        return (<>
@@ -146,10 +146,10 @@ const PortfolioCard = (props) => {
 				</div>
 				<div className="text-center">
 					<h4 className="text-uppercase mb-0">
-						<Link target={"_blank"} to={props.url} rel="nofollow" >
+						<a target={"_blank"} href={props.url} rel="nofollow" >
 							<span>{props.name}</span> 
 							<i className="flaticon-unlink"></i> 
-						</Link>
+						</a>
 					</h4>
 					<span>{props.description}</span>
 				</div>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import {Navbar, Container} from 'react-bootstrap';
+import {Navbar, Container,Row,Col} from 'react-bootstrap';
 import {WebButton} from './WebBase';
 import $ from 'jquery' // node module
 import Logo from './assets/images/logo.png';
@@ -19,7 +19,7 @@ class Header extends Component{
 	};
 
 	fetchData = () => {
-		fetch(`http://helpfulinsightdemo.com/helpfulinsight/public/api/v1/categories`)
+		fetch(`https://www.helpfulinsightsolution.com/api/v1/categories`)
 		.then(response => response.json())
 		.then(data =>
 			this.setState({
@@ -42,10 +42,10 @@ class Header extends Component{
 		});	
 		
 		$(window).on('click load', function(){
-			if(window.location.pathname !== '/radheshyam/helpfulinsight/' || window.location.pathname !== '/' ){
-				$("#header-fix").addClass("innerheader ");
-			}else{
+			if(window.location.pathname == '/radheshyam/helpfulinsight/' || window.location.pathname == '/' ){
 				$("#header-fix").removeClass("innerheader");
+			}else{
+				$("#header-fix").addClass("innerheader ");
 			}
 		})				
 	}	
@@ -54,6 +54,42 @@ class Header extends Component{
     render(){     		
        return (<>
 			<header id="header-fix" className={"header fixed-top"}>
+				<div className="top_header_bar d-none d-lg-block">
+					<Container>
+						<Row>
+							<Col md={12}>
+								<ul className="top_menu_head list-inline text-right mb-0">
+								{
+									this.props.contactdata.map( val => {
+											const {email,skype,watsapp} = val;  
+                                            return (
+                                                <>													
+													<li className="list-inline-item">
+														<a href={"skype:"+skype}>
+															<i className="flaticon-laptop"></i> 
+															{skype}
+														</a>
+													</li>
+													<li className="list-inline-item">
+														<a href={"mailto:"+email}>
+															<i className="flaticon-email"></i>  
+															{email}
+														</a>
+													</li>
+													<li className="list-inline-item">
+														<a href={"tel:"+watsapp}>
+															<i className="flaticon-phone-call"></i>  
+															+91-{watsapp}
+														</a>
+													</li>
+												</>)
+									})
+								}
+							</ul>
+							</Col>
+						</Row>    
+					</Container>
+				</div>
 				<Container>
 					<Navbar className='p-0' expand="lg">
 						<NavLink className="navbar-brand mr-0 p-0" to="/"><img src={Logo} alt="" className="img-fluid" /></NavLink>
@@ -65,7 +101,7 @@ class Header extends Component{
 						<Navbar.Collapse id="navbarSupportedContent">
 							<ul className="navbar-nav ml-auto">
 								<li className="nav-item">
-									<NavLink className="nav-link" exact to="/about">About</NavLink>
+									<NavLink className="nav-link" exact to="/about-us">About</NavLink>
 								</li>
 								<li className="nav-item">
 									<NavLink to="/services" className="nav-link">Services</NavLink>

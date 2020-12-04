@@ -23,7 +23,7 @@ const submitForm = () => {
         },
         body: JSON.stringify(formValues)
     };
-    fetch('http://helpfulinsightdemo.com/helpfulinsight/public/api/v1/contacts', requestOptions)
+    fetch('https://www.helpfulinsightsolution.com/api/v1/contacts', requestOptions)
 	.then(response => response.json())
 	.then(data => alert(data.id));	
 	 setFormValues({ ...formValues, name : '',email : '',phone : '',skype : '',service : '',budget : '',message : '' });
@@ -99,14 +99,14 @@ useEffect(() => {
 						<div className="col-12 col-md-6">
 							<div className="form-group position-relative">
 								<input type="tel" value={formValues.phone} onChange={handleChange} name="phone" id="phone" className="form-control" placeholder="Phone Number" autocomplete="off" />
-								<span className="formicon"><i className="flaticon-user"></i></span>
+								<span className="formicon"><i className="flaticon-phone-call"></i></span>
 								{formErrors.phone && (<span style={error} >{formErrors.phone}</span>)}
 							</div>
 						</div>
 						<div className="col-12 col-md-6">
 							<div className="form-group position-relative">
 								<input type="text" value={formValues.skype} onChange={handleChange} name="skype" id="skype" className="form-control" placeholder="Skype/Whatsapp" autocomplete="off" />
-								<span className="formicon"><i className="flaticon-user"></i></span>
+								<span className="formicon"><i className="flaticon-laptop"></i></span>
 								{formErrors.skype && (<span style={error} >{formErrors.skype}</span>)}
 							</div>
 						</div>
@@ -118,7 +118,7 @@ useEffect(() => {
 									<option value="Web Development">Web Development</option>
 									<option value="UI/UX Design">UI/UX Design</option>
 								</select>
-								<span className="formicon"><i className="flaticon-user"></i></span>
+								<span className="formicon"><i className="flaticon-24-hours-phone-service"></i></span>
 								{formErrors.service && (<span style={error} >{formErrors.service}</span>)}
 							</div>
 						</div>
@@ -154,18 +154,7 @@ useEffect(() => {
 
 }
 
-class IdCard extends Component{	  
-    render(){     		
-       return (<>
-			<div className="emailid-block rows">
-				<a href="" className="transition">
-					<i className={this.props.iconClass}></i> 
-					<span className="small-text rows">{this.props.text}</span>
-					<span className="large-text rows">{this.props.skype}</span>
-				</a>
-			</div>   
-		</>)};
-}
 
-export {FormCard,IdCard};
+
+export default FormCard;
 

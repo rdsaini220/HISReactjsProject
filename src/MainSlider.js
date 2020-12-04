@@ -11,12 +11,12 @@ import slider3 from './assets/images/banners/slider-3.png';
 // import React, {Component,Fragment} from 'react';
 
 var sliderstyle = {
-    paddingTop: '255px',
+    paddingTop: '200px',
     paddingBottom: '50px'
 }
 
 var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -27,19 +27,19 @@ let SlideData = [
     {
         title : 'Web Development',
         text : 'Requirments analysis<br /> Consulting your ideas <br /> Providing our inputs <br /> Latest trend awareness <br /> Competitive Pricing  <br />Engagement Model selection',
-        url : '/',
+        url : '/contact-us',
         img : slider1
     },
     {
         title : 'Mobile Application',
         text : 'Requirments analysis<br/> Consulting your ideas <br/> Providing our inputs <br/> Latest trend awareness <br/> Competitive Pricing  <br/>Engagement Model selection',
-        url : '/',
+        url : '/contact-us',
         img : slider2
     },
     {
         title : 'UI/UX Design',
         text : 'Requirments analysis<br/> Consulting your ideas <br/> Providing our inputs <br/> Latest trend awareness <br/> Competitive Pricing  <br/>Engagement Model selection',
-        url : '/',
+        url : '/contact-us',
         img : slider3
     }
      

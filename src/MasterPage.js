@@ -56,7 +56,7 @@ class MasterPage extends Component{
 														<p className="lato">Web development has progressed a way better than we think over the years. Your website is the first and best impression of your organization to users, so Appic Software lets you opt for the best services out of different web portals.</p>
 													</div>
 													<div className="technology_logos">
-														<ul className="list-unstyled d-flex flex-wrap justify-content-center align-items-center mb-0">
+														<ul className="list-unstyled d-flex flex-wrap align-items-center mb-0">
 															{
 																technologies.map((val,index) => {
 																	return <TechnologyLogos logo={val.logo} title={val.name} />
@@ -75,7 +75,7 @@ class MasterPage extends Component{
 									}
 									{
 										contantform ? (
-											<ContactForm />
+											<ContactForm ContactData={this.props.contactIds} />
 										): ('')
 									}
 									<div className="clearfix"></div>                                                               

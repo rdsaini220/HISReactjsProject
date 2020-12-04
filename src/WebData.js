@@ -1,15 +1,6 @@
 import feature from './assets/images/feature-1.jpg';
 import feature1 from './assets/images/feature-2.jpg';
 import portfolioimg from './assets/images/portfolio/portfolio-1.png';
-import certificate1 from './assets/images/certificate/certificate1.png';
-import certificate3 from './assets/images/certificate/certificate3.png';
-import develop from './assets/images/certificate/develop.png';
-import certificate4 from './assets/images/certificate/certificate4.png';
-import certificate6 from './assets/images/certificate/certificate6.png';
-import certificate7 from './assets/images/certificate/certificate7.png';
-import certificate8 from './assets/images/certificate/certificate8.png';
-import freelancer from './assets/images/certificate/freelancer.png';
-import upwork from './assets/images/certificate/upwork.png';
 import ind1 from './assets/images/industry/1.png';
 import ind2 from './assets/images/industry/2.png';
 import ind3 from './assets/images/industry/3.png';
@@ -36,25 +27,25 @@ let serviceData = [
     {
         iconClass : 'icon flaticon-responsive',
         title : 'UI/UX Development',
-        url : '/',
+        url : '/ui-ux-development',
         text : 'From Figma to Zeplin we have a team of top industry experts for designing.'
     },
     {
         iconClass : 'icon flaticon-coding',
         title : 'Web Development',
-        url : '/',
+        url : '/php-development',
         text : 'From PHP to advanced web app development environment we are ready.'
     },
     {
         iconClass : 'icon flaticon-mobile-app',
         title : 'Mobile Application',
-        url : '/',
+        url : '/cross-platform-development',
         text : 'No matter if you have Native, Hybrid or cross-platform we have vast experience with all.'
     },
     {
         iconClass : 'icon flaticon-monitor',
         title : 'Enterprise Solution',
-        url : '/',
+        url : '/e-commerce-development',
         text : 'Sed ut perspiciatis unde omnis iste natus error volup validate your ideas.'
     },
      
@@ -112,66 +103,6 @@ let PortfolioData = [
      
 ]
 
-let Brand_logo = [
-    {
-        img : certificate1,
-        url : '/',
-    },
-    {
-        img : certificate3,
-        url : '/',
-    },
-    {
-        img : develop,
-        url : '/',
-    },
-    {
-        img : certificate4,
-        url : '/',
-    },
-    {
-        img : certificate6,
-        url : '/',
-    },
-    {
-        img : certificate7,
-        url : '/',
-    },
-    {
-        img : certificate8,
-        url : '/',
-    },
-    {
-        img : freelancer,
-        url : '/',
-    },
-    {
-        img : upwork,
-        url : '/',
-    }
-]
-
-let IdData = [
-    {
-        iconClass : 'flaticon-envelope',
-        text : 'mail to our sales department',
-        userid : 'sales@appicsoftwares.com',
-        url : '/'
-    },
-    {
-        iconClass : 'flaticon-chat',
-        text : 'Our Skype Id',
-        userid : 'live:tarun.vyas2',
-        url : '/'
-    },
-    {
-        iconClass : 'flaticon-24-hours-phone-service',
-        text : 'Message On Whatsapp',
-        userid : '(+91) 9001721837',
-        url : '/'
-    }     
-];
-
 let GalleryData = [
     {
         img : ind1,
@@ -201,4 +132,4 @@ let GalleryData = [
      
 ];
 
-export {FeatureData,serviceData,PortfolioData,Brand_logo,IdData,GalleryData}
+export {FeatureData,serviceData,PortfolioData,GalleryData}

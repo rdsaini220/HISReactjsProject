@@ -17,21 +17,19 @@ class About extends Component{
             <section className="section section-sm position-relative" id="about">
 				<Container>
 					<Row>
-						<Col lg={6}>
+						<Col lg={5} className="mb-5 mb-lg-0">
 							<div className="block-decorate-img"><img src={aboutImg} alt="" />
 							</div>
 						</Col>
-						<Col lg={6}>
-							<div className="block-sm offset-top-45">
+						<Col lg={7}>
+							<div className="block-sm">
 								<div className="section-name">About us</div>
 								<h3 className="text-capitalize devider-bottom">What We<span className="text-primary"> Do</span></h3>
-								<p className="offset-xl-40">Helpful Insight is one of the well-known leaders in the technology revolution and provides complete IT solutions since 2016. The company provides the best services in Mobile application, Website development, Designing & Digital marketing. We are a team of highly professional experts. We are rigorously committed to quality and professionalism. We always seek an opportunity to help & Consult with any requirements, rather than selling our services to anyone.
-
-								We always thrive to consult and understand the requirements of the customer, because we believe in culture, where you treat & understand our customer nicely. Our founders always desire to create a company that understands customer needs. This has only been possible with the open, aura, and customer-obsessed attitude. At Helpful Insight, we have been enabling more modern, more effective, and more efficient services, where in you all the processes feel will be under a customer-centric umbrella after you award the project.
-
-								We are also committed to growth and accelerating the business synergies of our clients. We believe in creating real, practical helpful insights that modernize how we brought to today`s world, which has been developed and brought to market. Our desiring goal is to help customers, to establish better understanding and applause value and outcomes for customers.</p>
-								<div className="price-wrapper my-5">
-									<WebButton className='place-order btn btnprimary' name={'Start A Project'} link={'/Home'} />
+								<p><strong>Helpful Insight</strong> is one of the well-known leaders in the technology revolution and provides complete IT solutions since 2016. The company provides the best services in Mobile application, Website development, Designing & Digital marketing. We are a team of highly professional experts. We are rigorously committed to quality and professionalism. We always seek an opportunity to help & Consult with any requirements, rather than selling our services to anyone.</p>
+								<p>We always thrive to consult and understand the requirements of the customer, because we believe in culture, where you treat & understand our customer nicely. Our founders always desire to create a company that understands customer needs. This has only been possible with the open, aura, and customer-obsessed attitude. At <strong>Helpful Insight</strong>, we have been enabling more modern, more effective, and more efficient services, where in you all the processes feel will be under a customer-centric umbrella after you award the project.</p>
+								<p>We are also committed to growth and accelerating the business synergies of our clients. We believe in creating real, practical <strong>Helpful Insight</strong>s that modernize how we brought to today`s world, which has been developed and brought to market. Our desiring goal is to help customers, to establish better understanding and applause value and outcomes for customers.</p>
+								<div className="price-wrapper">
+									<WebButton className='place-order btn btnprimary' name={'Start A Project'} link={'/contact-us'} />
 								</div>
 							</div>
 						</Col>

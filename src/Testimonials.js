@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Container} from 'react-bootstrap';
 import Slider from "react-slick";
-// import nouser from './assets/images/no-user-image.png';
-// import React, {Component,Fragment} from 'react';
+
 const imgstyle = {
     top: 0,
     left: 0,
@@ -20,7 +19,6 @@ const imgstyle = {
     boxShadow: '-6px 6px 6px rgba(0, 0, 0, 0.23)'
 }
 
-
 var settings = {
     dots: false,
     prevArrow: false,
@@ -30,25 +28,6 @@ var settings = {
     slidesToShow: 1,
     slidesToScroll: 1
   };
-
-// let SlideData = [
-//     {
-//         description : 'I was SO very happy with the work, the speed, the communication an the willingness to help to the best way possible. Very pleased with their work Will diffidently select them for future work.',
-//         name : 'Yariv G.',
-//         country : 'Israel'
-//     },
-//     {
-//         description : 'I was SO very happy with the work, the speed, the communication an the willingness to help to the best way possible. Very pleased with their work Will diffidently select them for future work.',
-//         name : 'Yariv D.',
-//         country : 'Israel'
-//     },
-//     {
-//         description : 'I was SO very happy with the work, the speed, the communication an the willingness to help to the best way possible. Very pleased with their work Will diffidently select them for future work.',
-//         name : 'Yariv G.',
-//         country : 'Israel'
-//     }   
-     
-// ]
 
 const Slideitem = (props) => {
     return (<>
@@ -73,7 +52,7 @@ class Testimonials extends Component{
         }
     }
     fetchData = () => {
-		fetch(`http://helpfulinsightdemo.com/helpfulinsight/public/api/v1/testimonials`)
+		fetch(`https://www.helpfulinsightsolution.com/api/v1/testimonials`)
 		.then(response => response.json())
 		.then(data =>
 			this.setState({

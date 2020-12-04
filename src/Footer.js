@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom';
 import {Container,Row,Col} from 'react-bootstrap';
 import logowhite from './assets/images/logo-white.png';
 import {BrandLogos} from './WebBase';
-import {Brand_logo} from './WebData';
 import $ from 'jquery' // node module
 import {SyncLoader} from "react-spinners";
 
@@ -40,7 +39,7 @@ class Footer extends Component{
 		}
 	}
 	fetchData = () => {
-		fetch(`http://helpfulinsightdemo.com/helpfulinsight/public/api/v1/footersocialmedia`)
+		fetch(`https://www.helpfulinsightsolution.com/api/v1/footersocialmedia`)
 		.then(response => response.json())
 		.then(data => {
 				this.setState({
@@ -51,7 +50,7 @@ class Footer extends Component{
 		)
 		.catch(error => this.setState({ error, isLoading: false }));
 
-		fetch(`http://helpfulinsightdemo.com/helpfulinsight/public/api/v1/footerbrandlogos`)
+		fetch(`https://www.helpfulinsightsolution.com/api/v1/footerbrandlogos`)
 		.then(response => response.json())
 		.then(data => {
 				this.setState({
@@ -67,7 +66,7 @@ class Footer extends Component{
 	componentDidMount() {
 		 this.fetchData();
 		$(window).on('load click', function(){
-			const page = ['','/contact-us','/about','/services'];
+			const page = ['','/','/contact-us','/about-us','/services','/portfolio'];
 			var x;
 			for (x of page){
 				if(window.location.pathname == '/radheshyam/helpfulinsight'+ x){
@@ -115,13 +114,12 @@ class Footer extends Component{
 										<div className="footer-widget links-widget">
 											<h5>Quick Links</h5>
 											<ul className="list-link list-unstyled mb-0">
-												<li><NavLink exact to='/who-we-are' >Who We Are</NavLink></li>
-												<li><NavLink exact to='/why-us' >Why Us</NavLink></li>
-												<li><NavLink exact to='/testimonial' >Testimonial</NavLink></li>
+												<li><NavLink exact to='/about-us' >Who We Are</NavLink></li>
+												<li><NavLink exact to='/portfolio' >Why Us</NavLink></li>
 												<li><NavLink exact to='/services' >Services</NavLink></li>
 												<li><NavLink exact to='/portfolio' >Our Portfolio</NavLink></li>
 												<li><NavLink exact to='/contact-us' >Contact Us</NavLink></li>
-												<li><NavLink exact to='/free-consultation' >Free Consultation</NavLink></li>
+												<li><NavLink exact to='/contact-us' >Free Consultation</NavLink></li>
 											</ul>
 										</div>
 									</div>
@@ -133,13 +131,13 @@ class Footer extends Component{
 										<div className="footer-widget news-widget">
 											<h5>Services</h5>
 											<ul className="list-link list-unstyled mb-0">
-												<li><NavLink exact to="/">Managed IT services</NavLink></li>
-												<li><NavLink exact to="/">Cloud Services</NavLink></li>
-												<li><NavLink exact to="/">IT support & helpdesk</NavLink></li>
-												<li><NavLink exact to="/">Cyber security</NavLink></li>
-												<li><NavLink exact to="/">Custom Software</NavLink></li>
-												<li><NavLink exact to="/">Free Consultation</NavLink></li>
-												<li><NavLink exact to="/">Our Business Growth</NavLink></li>
+												<li><NavLink exact to="/cross-platform-development">Cross Platform</NavLink></li>
+												<li><NavLink exact to="/hybrid-development">Hybrid</NavLink></li>
+												<li><NavLink exact to="/php-development">PHP Development</NavLink></li>
+												<li><NavLink exact to="/cms-development">CMS Development</NavLink></li>
+												<li><NavLink exact to="/ui-ux-development">UI/UX Design</NavLink></li>
+												<li><NavLink exact to="/psd-to-wordpress-development">PSD to WordPress</NavLink></li>
+												<li><NavLink exact to="/e-commerce-development">E commerce Development</NavLink></li>
 											</ul>
 										</div>
 									</div>
@@ -186,7 +184,7 @@ class Footer extends Component{
 							</Col>
 						</Row>
 					<div className="footer-bottom text-center">
-						<div className="copyright">Copyright &copy; 2020 <b>Helpful Insight Solution</b>. All Rights Reserved.</div>
+						<div class="copyright">Copyright © 2020 <a className="text-white" target="_blank" href="https://www.helpfulinsightsolution.com"><b>Helpful Insight Solution</b></a>. All Rights Reserved.</div>
 					</div>
 				</Container>
 			</footer>
