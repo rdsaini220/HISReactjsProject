@@ -42,7 +42,7 @@ class ContactForm extends Component{
                                                         </div>
                             
                                                         <div className="emailid-block rows">
-                                                            <a target="_blank" href={"https://web.whatsapp.com/send?phone=+91"+watsapp+"%20&amp;text=Helpful%20Insight%20Solution"} className="transition">
+                                                            <a  href={"https://web.whatsapp.com/send?phone=+91"+watsapp+"%20&amp;text=Helpful%20Insight%20Solution"} target="_blank" className="transition">
                                                                 <i className="flaticon-24-hours-phone-service"></i> 
                                                                 <span className="small-text rows">Message On Whatsapp</span>
                                                                 <span className="large-text rows">+91-{watsapp}</span>

@@ -23,8 +23,8 @@ class Header extends Component{
 		.then(response => response.json())
 		.then(data =>
 			this.setState({
-			categories: data.data,
-			isLoading: data.success,
+				categories: data.data,
+				isLoading: data.success,
 			})
 		)
 		.catch(error => this.setState({ error, isLoading: false }));

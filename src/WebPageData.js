@@ -1,4 +1,35 @@
-import certificate1 from './assets/images/certificate/certificate1.png';
+import Xamarin from './assets/images/technology/Xamarin.png';
+import ReactNative from './assets/images/technology/React-Native.png';
+import Flutter from './assets/images/technology/Flutter.png';
+import AdobePhoneGap from './assets/images/technology/Adobe-PhoneGap.png';
+import Ionic from './assets/images/technology/Ionic.png';
+import Monaca from './assets/images/technology/monaca.png';
+import Onsen from './assets/images/technology/Onsen.png';
+import Laravel from './assets/images/technology/laravel.png';
+import Codeigniter from './assets/images/technology/Codeigniter.png';
+import cakePhp from './assets/images/technology/cake-php.png';
+import Zend from './assets/images/technology/Zend.png';
+import Smarty from './assets/images/technology/smarty.png';
+import Wordpress from './assets/images/technology/wordpress.png';
+import Magento from './assets/images/technology/Magento.png';
+import Shopify from './assets/images/technology/Shopify.png';
+import Wix from './assets/images/technology/Wix.png';
+import Druple from './assets/images/technology/Druple.png';
+import Prestashop from './assets/images/technology/Prestashop.png';
+import Opencart from './assets/images/technology/opencart.png';
+import Angular from './assets/images/technology/angular.png';
+import EmberJs from './assets/images/technology/ember-js.png';
+import Graphql from './assets/images/technology/graphql.png';
+import Typescript from './assets/images/technology/typescript.png';
+import Vue from './assets/images/technology/vue.png';
+import NodeJs from './assets/images/technology/node-js.png';
+import Html5 from './assets/images/technology/html5.png';
+import Css3 from './assets/images/technology/css3.png';
+import Bootstrap from './assets/images/technology/bootstrap.png';
+import Fontawesome from './assets/images/technology/fontawesome.png';
+import Illustrator from './assets/images/technology/illustrator.png';
+import Photoshop from './assets/images/technology/photoshop.png';
+import AdobeXd from './assets/images/technology/adobe-xd.png';
 
 import crossPlatform from './assets/images/services/cross-platform.jpg';
 import hybrid from './assets/images/services/hybrid.jpg';
@@ -18,34 +49,165 @@ import onDemand from './assets/images/services/on-demand.jpg';
 
 let Technology_logo = [
     {
-        logo : certificate1,
-        name : 'WordPress',
+        "id": 1,
+        "name": "Xamarin",
+        "image": Xamarin
     },
     {
-        logo : certificate1,
-        name : 'Magento',
+        "id": 2,
+        "name": "React Native",
+        "image": ReactNative
     },
     {
-        logo : certificate1,
-        name : 'Shopify',
+        "id": 3,
+        "name": "Flutter",
+        "image": Flutter
     },
     {
-        logo : certificate1,
-        name : 'Wix',
+        "id": 4,
+        "name": "Adobe PhoneGap",
+        "image": AdobePhoneGap
     },
     {
-        logo : certificate1,
-        name : 'Druple',
+        "id": 5,
+        "name": "Ionic",
+        "image": Ionic
     },
     {
-        logo : certificate1,
-        name : 'Prestashop',
+        "id": 6,
+        "name": "Monaca",
+        "image": Monaca
     },
     {
-        logo : certificate1,
-        name : 'Open Cart',
-    }
-    
+        "id": 7,
+        "name": "Onsen",
+        "image": Onsen
+    },
+    {
+        "id": 8,
+        "name": "Laravel",
+        "image": Laravel
+    },
+    {
+        "id": 9,
+        "name": "Codeigniter",
+        "image": Codeigniter
+    },
+    {
+        "id": 10,
+        "name": "Cake Php",
+        "image": cakePhp
+    },
+    {
+        "id": 11,
+        "name": "Zend",
+        "image": Zend
+    },
+    {
+        "id": 12,
+        "name": "Smarty",
+        "image": Smarty
+    },
+    {
+        "id": 13,
+        "name": "Wordpress",
+        "image": Wordpress
+    },
+    {
+        "id": 14,
+        "name": "Magento",
+        "image": Magento
+    },
+    {
+        "id": 15,
+        "name": "Shopify",
+        "image": Shopify
+    },
+    {
+        "id": 16,
+        "name": "Wix",
+        "image": Wix
+    },
+    {
+        "id": 17,
+        "name": "Druple",
+        "image": Druple
+    },
+    {
+        "id": 18,
+        "name": "Prestashop",
+        "image": Prestashop
+    },
+    {
+        "id": 19,
+        "name": "Open Cart",
+        "image": Opencart
+    },
+    {
+        "id": 20,
+        "name": "Angular",
+        "image": Angular
+    },
+    {
+        "id": 21,
+        "name": "Ember Js",
+        "image": EmberJs
+    },
+    {
+        "id": 22,
+        "name": "Graph QL",
+        "image": Graphql
+    },
+    {
+        "id": 23,
+        "name": "Typescript",
+        "image": Typescript
+    },
+    {
+        "id": 24,
+        "name": "Vue Js",
+        "image": Vue
+    },
+    {
+        "id": 25,
+        "name": "Node JS",
+        "image": NodeJs
+    },
+    {
+        "id": 26,
+        "name": "HTML5",
+        "image": Html5
+    },
+    {
+        "id": 27,
+        "name": "CSS5",
+        "image": Css3
+    },
+    {
+        "id": 28,
+        "name": "Bootstrap",
+        "image": Bootstrap
+    },
+    {
+        "id": 29,
+        "name": "Font Awesome",
+        "image": Fontawesome
+    },
+    {
+        "id": 30,
+        "name": "Adobe Illustrator",
+        "image": Illustrator
+    },
+    {
+        "id": 31,
+        "name": "Adobe Photoshop",
+        "image": Photoshop
+    },
+    {
+        "id": 32,
+        "name": "Adobe XD",
+        "image": AdobeXd
+    }  
 ];
 
 let crossplatformdevelopment = [
@@ -59,7 +221,7 @@ let crossplatformdevelopment = [
         extratext : `<p>With the native, where there are some of the best benefits exist, on the other hand, it has some drawbacks too compared to cross-platform. When the actual cost of hiring a native developer is a bit higher than what a cross-platform developer has. Likewise. Any of the code developed by an IOS pool of resources, certainly cannot be reused by the google platform android team and it goes vice-versa as well.</p>
         <p><strong>Helpful Insight</strong> as a company always tries to consult any prospect, so that the right direction can be identified for the particular application development is required. If it is really required to understand the business needs of an application and its marketed audience. <strong>Helpful Insight</strong> will play a massive role to help to decide what is to be done in which ways.</p>`,
         image : crossPlatform,
-        technologies : Technology_logo,
+        technologies : [1,2,3,4,5],
         category_id : 16,        
         contantform : true
     }     
@@ -72,7 +234,7 @@ let hybriddevelopment = [
         text : `<p>Hybrid application is a blended form of applications. The name hybrid, itself states that it is the combinations of characters of 2 or more types of applications. It has a characteristics of both the native forms and the web form of applications and solutions. Native is coded in different types of platforms like for an iphone or I pad, we need to code on IOS platform build by Apple. Where in the platform Android has been built by Google. Other than this if we talk about the web technologies they are built in various forms of web technologies. In Hybrid applications, It is a combination where we have various functionalities looks like a naïve mobile application and some of the features look like a web application. We at <strong>Helpful Insight</strong>, always make sure that customer should be consulted well with his requirements of business. Once he come we always try to put efforts to guide him the appropriate path for the development process, and always try to help him to choose which platform and why does he choose and which one he should choose.</p>`,
         extratext : '',
         image : hybrid,
-        technologies : Technology_logo,
+        technologies : [5,6,7],
         category_id : 15,  
         contantform : true
     }     
@@ -87,7 +249,7 @@ let nativedevelopment = [
         </p>`,
         extratext : '',
         image : native,
-        technologies : Technology_logo,
+        technologies : [5,4],
         category_id : 7,  
         contantform : true
     }     
@@ -103,7 +265,7 @@ let reactnativedevelopment = [
         `,
         extratext : '',
         image : native,
-        technologies : Technology_logo,
+        technologies : [],
         category_id : 6,  
         contantform : true
     }     
@@ -120,11 +282,12 @@ let phpdevelopment = [
         <p>Because PHP is an open-source scripting language, it provides massive front-end and back-end development capabilities and it provides unlimited opportunities and possibilities to programmers, to enable any of the enterprise applications to be developed. As a custom PHP development company, <strong>Helpful Insight</strong> can provide you both a dynamic web environment and a web application with all-new advanced features and functionalities.</p>
         `,
         image : PHPdevelopment,
-        technologies : Technology_logo,
+        technologies : [8,9,10,11,12],
         category_id : 9,  
         contantform : true
     }     
 ];
+
 let cmsdevelopment = [
     {
         title : 'CMS Development',
@@ -132,8 +295,8 @@ let cmsdevelopment = [
         text : `<p class="lato">CMS development is a broader term in terms of itssignificance. When we use content management systems for our custom-built webapplications, <strong>Helpful Insight</strong> as a web development company develops an outstandingrich look websites development. The significance of your online presence. CMS has itsown ease and convenience to update, edit, create, and modify, the content of your websitein a user-friendly interface. Various aspects allow us to regenerate themodest content and its significance. The database-oriented aspect of Content Management The system provides its capability to build some of the high-end features for your website.</p>
                 <p class="lato">With a content management system (CMS), you canbecome a manager of your website content with access to an extremely user-friendly content manager. Whenever you need to update/edit your website stuffwith the help of an online content management system. As the design is discrete fromthe website stuff, it will be a task of ease for anybody to change, edit, andpublish within the Content Management System. This means that you can publishblogs or you can create a new page without any hassle. The best part is that you don’t have to learn how to do any programming stuff. <strong>Helpful Insight</strong> has avital role to provide a highly user-friendly CMS for all the websites developedby us.</p>`,
         extratext : '',
-                image : CMSdevelopment,
-        technologies : Technology_logo,
+        image : CMSdevelopment,
+        technologies : [13,14,15,16,17,18,19],
         category_id : 8,  
         contantform : true
     }     
@@ -148,7 +311,7 @@ let trandingjsdevelopment = [
                 <p><strong>Node.js :</strong> Known among developers as the best cross-platform app development framework, node’s popularity will rise in 2020 with the rise in demand of cross-platform apps. Running on Google Chrome’s V8 JavaScript Engine, node.js is known for building light-weight applications that are unparalleled in performance.</p>`,
         extratext : '',
         image : trandingJs,
-        technologies : Technology_logo,
+        technologies : [20,21,22,23,24,2,25],
         category_id : 11,  
         contantform : true
     }     
@@ -161,7 +324,7 @@ let customplugindevelopment = [
                         <p>The best part about the plugins are, they increase & appreciate the functionality of Word Press website development and helps in delivering a custom web application. In order to find the best match we can be a 100% rely on customized development of any word press plugin by <strong><strong>Helpful Insight</strong></strong>. At <strong>Helpful Insight</strong> we expertise in custom plugin development solutions. We always consult to your ideas and work on possible methodologies to furnish the best outcome, we always drive things, so that you achieve your goals using our design and code.</p>`,
         extratext : '',
         image : customLugin,
-        technologies : Technology_logo,
+        technologies : [],
         category_id : 10,  
         contantform : true
     }     
@@ -174,7 +337,7 @@ let uiuxdevelopment = [
                 <p>At <strong>Helpful Insight</strong>, we create your UI/UX design project in a flawless manner and always try to make you feel pleasant ways. With us you and business idea will grow and you will have a successful experience. <strong>Helpful Insight</strong> is a well-known experts for UI/UX .We are a design company which provide a massive help to our clients related to various types of major platforms. Our UI/UX web design help you reach millions of global customers. With us it will be sure that you will grow with your UI/UX ideas, as our team has an outstanding skillset in creating innovative and beautiful UI/UX designs to help grow your business. Our designs will provide you an opportunity to help our prospects to communicate and make their business better.</p>`,
         extratext : '',
         image : uiUxDesign,
-        technologies : Technology_logo,
+        technologies : [26,27,28,29,30,31,32],
         category_id : 12,  
         contantform : true
     }     
@@ -203,7 +366,7 @@ let psdtowordpressdevelopment = [
                         <p>One can use different methods and procedures to convert it further into word press, including auto-code, automation tools. It is a very important task to hire a dedicated expert from a talented web development company. <strong>Helpful Insight</strong> is one the best available options of the market. This will help furnish this project in the most professional manner.</p>`,
         extratext : '',
         image : psdWordpress,
-        technologies : Technology_logo,
+        technologies : [],
         category_id : 17,  
         contantform : true
     }     
@@ -217,7 +380,7 @@ let ecommercedevelopment = [
                 <p>In any e-commerce system, typically have more than one stakeholders. It includes massive number of internal and external users. It may also have some of the many inactive partners or VCs, who need to interact with the ecommerce system. In order to handle every complex arrangements of the ecommerce system, our all the best ecommerce website developers & designers work in a synchronized team work schedule with you to make sure in some special selective cases that are relevant for your situation. This synchronization and understanding will help you and us in order to identify the right combination of technologies that will be appropriate and suitable for your specific requirements. Our 50+ full-time advanced level experts have 5+ years of average experience in developing custom eCommerce solutions & applications.</p>`,
         extratext : '',
         image : eEommerce,
-        technologies : Technology_logo,
+        technologies : [13,14,15,16,17,18,19,10,25,26],
         portfolio : 18,
         contantform : true
     }     
@@ -265,5 +428,5 @@ let ondemandsdevelopment = [
 ];
 
 
-export {crossplatformdevelopment,hybriddevelopment,nativedevelopment,reactnativedevelopment,phpdevelopment,cmsdevelopment,trandingjsdevelopment,customplugindevelopment,
+export {Technology_logo,crossplatformdevelopment,hybriddevelopment,nativedevelopment,reactnativedevelopment,phpdevelopment,cmsdevelopment,trandingjsdevelopment,customplugindevelopment,
  uiuxdevelopment,emailtemplatedevelopment,psdtowordpressdevelopment,ecommercedevelopment,restapiintegration,paymentgateways,ondemandsdevelopment}

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {InnerArea} from './WebBase';
 import {Container,Row,Col} from 'react-bootstrap';
 import {WebButton, SecHeading ,PortfolioCard} from './WebBase';
-import {ContactForm} from './Contact';
 import $ from 'jquery' // node module
 import {SyncLoader} from "react-spinners";
 
@@ -51,7 +50,7 @@ class PortfolioSec extends Component {
             this.setState({
                 pegePorrtfolio: data.data.portfolios,
             });
-            if(this.state.pegePorrtfolio.length == 0 && this.props.category_id){
+            if(this.state.pegePorrtfolio.length === 0 && this.props.category_id){
                 $('.portfolio').css('display','none')
             }
         })

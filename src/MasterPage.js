@@ -3,6 +3,7 @@ import {InnerArea,MainServiceSec,TechnologyLogos} from './WebBase';
 import {PortfolioSec} from './Portfolio';
 import {ContactForm} from './Contact';
 import { IndustriesSec } from './About';
+import { Technology_logo } from './WebPageData';
 import { Markup } from 'interweave';
 
 
@@ -22,15 +23,6 @@ class MasterPage extends Component{
 				pageData: this.props.pageUrl,
 				isLoading: true,
 			})
-		// fetch(`http://helpfulinsightdemo.com/helpfulinsight/public/api/v1/categories`)
-		// .then(response => response.json())
-		// .then(data =>
-		// 	this.setState({
-		// 	categories: data.data,
-		// 	isLoading: data.success,
-		// 	})
-		// )
-		// .catch(error => this.setState({ error, isLoading: false }));
  	};
 
 	componentDidMount() {
@@ -61,9 +53,13 @@ class MasterPage extends Component{
 															<div className="technology_logos">
 																<ul className="list-unstyled d-flex flex-wrap align-items-center mb-0">
 																	{
-																		technologies.map((val,index) => {
-																			return <TechnologyLogos logo={val.logo} title={val.name} />
-																		})
+																		Technology_logo.map((val,index) => {
+																			for(var x of technologies){
+																				if(x === val.id){
+																					return <TechnologyLogos logo={val.image} title={val.name} />																					
+																				}
+																			}	
+																		})																		
 																	}  	
 																</ul>
 															</div>

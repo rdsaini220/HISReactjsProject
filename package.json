@@ -1,6 +1,7 @@
 {
   "name": "helpfulinsight",
   "version": "0.1.0",
+  "homepage": "http://helpfulinsightdemo.com/radheshyam/helpfulinsight/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
