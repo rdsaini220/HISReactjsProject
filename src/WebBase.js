@@ -94,13 +94,22 @@ class MainServiceSec extends Component{
 	   		<section className="main-service-sec">
                 <Container className="ser-vc-on">
                     <Row className="align-items-center">
-                        <Col className="col-12 col-lg-7 mb-5 mb-lg-0">
+                        <Col className="col-12 col-xl-7 order-2 order-xl-1">
                             <h2>{this.props.title}</h2>
                             {this.props.children}
                         </Col>
-                        <Col className="col-12 col-lg-5">
-                            <img src={this.props.image} alt={this.props.title} className="img-fluid" />
+                        <Col className="col-12 col-xl-5 mb-4 order-1 order-xl-2 text-center mb-5 mb-xl-0">
+							<div className="service-image">
+                            	<img src={this.props.image} alt={this.props.title} className="img-fluid" />
+					    	</div>
                         </Col>
+						{
+							this.props.extratext ?(
+								<Col className="col-12 col-xl-12 order-3">
+									{this.props.extratext}
+								</Col>
+							):('')
+						}						
                     </Row>
                 </Container>
 		    </section>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {InnerArea,MainServiceSec,TechnologyLogos} from './WebBase';
 import {PortfolioSec} from './Portfolio';
 import {ContactForm} from './Contact';
+import { IndustriesSec } from './About';
 import { Markup } from 'interweave';
 
 
@@ -12,7 +13,7 @@ class MasterPage extends Component{
             isLoading: false,
             pageData: undefined,
             pagePortfolio: [],
-            error: null
+			error: null,
         };
 	};
 
@@ -41,33 +42,39 @@ class MasterPage extends Component{
 	   		{ 
 				this.state.isLoading ? (
 					this.state.pageData.map( page => {
-						const { title,image,text,technologies,category_id,contantform } = page;
+						const { title,image,text,extratext,technologies,category_id,contantform } = page;
 							return (<>
 								  	<InnerArea ineerheading={title}></InnerArea>
-									<MainServiceSec title={title} image={image}>
+									<MainServiceSec title={title} image={image} extratext={<Markup content={extratext} ></Markup>}>
 										<Markup content={text} ></Markup>
 									</MainServiceSec>	
-									<section className="main-service-sec bgprimaryNew">
-										<div className="container ser-vc-on">
-											<div className="row align-items-center">
-												<div className="col-12 col-lg-12">
-													<div className="ServiceHeading mb-5 text-white text-center">
-														<h2 className="text-white text-uppercase mb-2">Different Technologies for Our Clients</h2>
-														<p className="lato">Web development has progressed a way better than we think over the years. Your website is the first and best impression of your organization to users, so Appic Software lets you opt for the best services out of different web portals.</p>
-													</div>
-													<div className="technology_logos">
-														<ul className="list-unstyled d-flex flex-wrap align-items-center mb-0">
-															{
-																technologies.map((val,index) => {
-																	return <TechnologyLogos logo={val.logo} title={val.name} />
-																})
-															}  	
-														</ul>
+									{
+										technologies.length > 0 ? (
+											<section className="main-service-sec bgprimaryNew">
+												<div className="container ser-vc-on">
+													<div className="row align-items-center">
+														<div className="col-12 col-lg-12">
+															<div className="ServiceHeading mb-5 text-white text-center">
+																<h2 className="text-white text-uppercase mb-2">Different Technologies for Our Clients</h2>
+																<p className="lato">Web development has progressed a way better than we think over the years. Your website is the first and best impression of your organization to users, so Appic Software lets you opt for the best services out of different web portals.</p>
+															</div>
+															<div className="technology_logos">
+																<ul className="list-unstyled d-flex flex-wrap align-items-center mb-0">
+																	{
+																		technologies.map((val,index) => {
+																			return <TechnologyLogos logo={val.logo} title={val.name} />
+																		})
+																	}  	
+																</ul>
+															</div>
+														</div>
 													</div>
 												</div>
-											</div>
-										</div>
-									</section>	
+											</section>	
+										):( 
+											technologies === true ? (<IndustriesSec /> ): ('')											
+										) 
+									}
 									{
 										category_id ? (
 											<PortfolioSec category_id={category_id} />

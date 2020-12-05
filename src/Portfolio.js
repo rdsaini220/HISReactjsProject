@@ -13,7 +13,7 @@ class PortfolioSec extends Component {
     constructor(props){
         super(props)
         this.state = {
-            limit : 3,
+            limit : 6,
             category_id : this.props.category_id,
             pegePorrtfolio: [],
             path:'',
@@ -24,7 +24,7 @@ class PortfolioSec extends Component {
     onLoadMore = () =>{
         if(this.state.limit < this.state.PortfolioData.length){
              this.setState({
-                limit: this.state.limit + 3
+                limit: this.state.limit + 6
             })
         }else{
             document.getElementById('loadMore').style.display = 'none';
@@ -93,7 +93,7 @@ class PortfolioSec extends Component {
                             <Row>
                                 <Col md={12} className="text-center pt-5 view_more_portfolio">
                                     {
-                                        this.state.PortfolioData.length > 3 ? (
+                                        this.state.PortfolioData.length > 6 ? (
                                             this.props.loadMore ? (
                                                 <button id='loadMore' className="loadMore btn place-order button btnprimary" onClick={this.onLoadMore} >Load More Portfolio</button>
                                             ):(

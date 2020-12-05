@@ -9,6 +9,43 @@ import aboutImg from './assets/images/about.jpg';
 
 var heading = "We dont just offer our services We create a Helpful Insight for clients";
 
+class IndustriesSec extends Component{
+    render(){   
+       return (<>
+			<section className="industries-sec bgprimaryNew mt-5 pb-0">
+				<div className="design-img">
+					<img src='https://www.bvmsolution.com/public/web-assets/images/port1.png' alt="dots" className="port1" />
+				</div>
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12 col-md-12">
+							<div className="section-heading2"><h1 className="fancy workHeading text-white">Industries&nbsp; We&nbsp; Serve</h1></div>
+						</div>
+					</div>
+				</div>
+		   		<div className="container-fluid px-0">
+		        <div className="row no-gutters">
+		            <div className="col-lg-12 col-md-12">
+		               	<div className="app_fetured_item">
+		                  	<div className="gallery-content">
+		                        <ul className="list-inline mb-0">
+									{
+										GalleryData.map((val,index) => {
+											return <GalleryContent img={val.img} title={val.title} text={val.text} />
+										})
+									}	
+		                        </ul>
+		                    </div>
+		               	</div>
+		            </div>
+		        </div>
+		   </div>
+			</section>
+    	</>
+    )};
+
+}
+
 class About extends Component{
     render(){   
        return (<>
@@ -38,35 +75,7 @@ class About extends Component{
 				<div className="decor-text decor-text-1">ABOUT</div>
 			</section>
 
-			<section className="industries-sec bgprimaryNew mt-5 pb-0">
-			<div className="design-img">
-				<img src={process.env.PUBLIC_URL + "images/port1.png"} alt="dots" className="port1" />
-			</div>
-			<div className="container">
-		        <div className="row">
-		            <div className="col-lg-12 col-md-12">
-		               	<div className="section-heading2"><h1 className="fancy workHeading text-white">Industries&nbsp; We&nbsp; Serve</h1></div>
-		            </div>
-		        </div>
-		    </div>
-		   	<div className="container-fluid px-0">
-		        <div className="row no-gutters">
-		            <div className="col-lg-12 col-md-12">
-		               	<div className="app_fetured_item">
-		                  	<div className="gallery-content">
-		                        <ul className="list-inline mb-0">
-									{
-										GalleryData.map((val,index) => {
-											return <GalleryContent img={val.img} title={val.title} text={val.text} />
-										})
-									}	
-		                        </ul>
-		                    </div>
-		               	</div>
-		            </div>
-		        </div>
-		   </div>
-		</section>
+			<IndustriesSec />
 
             <section className="event_fact_area bg-extra-light">
 				<Container>
@@ -101,43 +110,12 @@ class About extends Component{
 					</div>
 				</Container>
 			</section>
-            
-			<div className="testimonial-back">
-				<section className="testimonials">
-					<Container>
-						<Row>
-							<Col md={6} lg={6}>
-								<div className="testimonial_title">		                  		
-									<h6> Testimonials</h6>
-									<h2 className="f_p f_size_30 l_height45 f_600 t_color"> Loved by businesses,<br/>and individuals across<br/> the globe.</h2>
-									{/* <div className="cara-arrows">
-										<a className="carousel-control-prev" href="#testimonial4" data-slide="prev">
-											<span className="carousel-control-prev-icon"><i className="flaticon-long-arrow-pointing-to-left"></i></span>
-										</a>
-										<a className="carousel-control-next" href="#testimonial4" data-slide="next">
-											<span className="carousel-control-next-icon"><i className="flaticon-long-arrow-pointing-to-the-right"></i></span>
-										</a>
-									</div> */}
-								</div>
-							</Col>
-							<Col md={6} lg={6}>
-								<div className="stratup_testimonial_info d-flex align-items-center">
-									<section className="testimonial text-center">
-										<Container>
-											<Testimonials />		                           		
-										</Container>
-									</section>
-								</div>
-							</Col>
-						</Row>
-					</Container>
-				</section>
-			</div>
+            <Testimonials />
 			<div className="clearfix"></div>
     	</>
     )};
 
 }
 
-export default About;
+export  {About, IndustriesSec};
 

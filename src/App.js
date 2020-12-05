@@ -7,7 +7,7 @@ import MasterPage from './MasterPage';
 import {Portfolio} from './Portfolio';
 import Services from './Services';
 import {Contact} from './Contact';
-import About from './About';
+import {About} from './About';
 import ScrollToTop from './ScrollToTop';
 import {crossplatformdevelopment,hybriddevelopment,nativedevelopment,reactnativedevelopment,phpdevelopment,cmsdevelopment,trandingjsdevelopment,customplugindevelopment,
  uiuxdevelopment,emailtemplatedevelopment,psdtowordpressdevelopment,ecommercedevelopment,restapiintegration,paymentgateways,ondemandsdevelopment} from './WebPageData';

@@ -8,9 +8,13 @@ body {
   line-height: 28px;
   word-wrap: break-word;
   font-family: 'Heebo';
-  /*background: #f2f4ff;*/
   background: #fff;
   overflow-x: hidden;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 section {
@@ -263,7 +267,7 @@ nav ul.navbar-nav li:hover .dropdown {
 
 .menuHeadTitle a {
   color: #fff !important;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /***** Banner *****/
@@ -2019,9 +2023,10 @@ form.subscribe-form textarea.form-control {
   transition: all 300ms ease;
 }
 
-.floatmenu {
+.floatmenu,
+.social-partner {
   position: fixed;
-  top: 15%;
+  top: calc(100% - 84%);
   right: 0;
   z-index: 1050;
   background-color: #534db8;
@@ -2051,6 +2056,15 @@ form.subscribe-form textarea.form-control {
   text-transform: capitalize;
 }
 
+.social-partner {
+  top: calc(100% - 84% + 200px);
+  padding: 14px 0;
+}
+
+.social-partner p {
+  margin-bottom: 7px;
+}
+
 .banner-right img {
   width: auto !important;
   margin: 0 auto;
@@ -2059,13 +2073,15 @@ form.subscribe-form textarea.form-control {
 
 .service-image {
   position: relative;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .service-image:before {
   position: absolute;
-  right: 0;
-  top: -5%;
-  height: 120%;
+  right: 1%;
+  top: 0;
+  height: 100%;
   width: 100%;
   background-image: url(https://expert-themes.com/html/eventrox/images/icons/shape-2.png);
   background-repeat: no-repeat;
@@ -2093,6 +2109,7 @@ form.subscribe-form textarea.form-control {
   height: 450px;
   object-fit: cover;
   width: 100%;
+  background: #fff;
 }
 
 @keyframes dizzling {

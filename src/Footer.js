@@ -184,10 +184,17 @@ class Footer extends Component{
 							</Col>
 						</Row>
 					<div className="footer-bottom text-center">
-						<div class="copyright">Copyright © 2020 <a className="text-white" target="_blank" href="https://www.helpfulinsightsolution.com"><b>Helpful Insight Solution</b></a>. All Rights Reserved.</div>
+						<div className="copyright">Copyright © 2020 <a className="text-white" target="_blank" href="https://www.helpfulinsightsolution.com"><b>Helpful Insight Solution</b></a>. All Rights Reserved.</div>
 					</div>
 				</Container>
 			</footer>
+
+			<div className="floatmenu">
+            <p>
+          	    <img src="https://www.helpfulinsightsolution.com/frontend/images/contact-floting-icon.png" alt="" width="38" height="38" className="alignnone size-full wp-image-1663" />
+                <NavLink exact to='/contact-us' >contact</NavLink>
+            </p>
+        </div>
         </>
     )};
 }
