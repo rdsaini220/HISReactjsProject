@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
-import {WebButton, InnerArea,GalleryContent} from './WebBase';
-import {GalleryData} from './WebData';
-import Testimonials from './Testimonials';
-import aboutImg from './assets/images/about.jpg';
+import {WebButton, InnerArea,GalleryContent} from '../components/WebBase';
+import {GalleryData} from '../WebData';
+import Testimonials from '../components/Testimonials';
+import aboutImg from '../assets/images/about.jpg';
 
 
 

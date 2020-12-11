@@ -1,3 +1,23 @@
+import Logo from './assets/images/logo.png';
+import logoWhite from './assets/images/logo-white.png';
+
+import stepsleftdot from './assets/images/steps-leftdot.png';
+import stepsrightdot from './assets/images/Steps-rightdot.png';
+import globe from './assets/images/globe.png';
+import pattern1 from './assets/images/pattern-1.png';
+import icon1 from './assets/images/icon-1.png';
+import icon2 from './assets/images/icon-2.png';
+import icon3 from './assets/images/icon-3.png';
+import about1 from './assets/images/about-1.jpg';
+import about2 from './assets/images/about-2.jpg';
+import about3 from './assets/images/about-3.jpg';
+import about4 from './assets/images/about-4.jpg';
+import processImg from './assets/images/process.png';
+
+import slider1 from './assets/images/banners/slider-1.png';
+import slider2 from './assets/images/banners/slider-2.png';
+import slider3 from './assets/images/banners/slider-3.png';
+
 import feature from './assets/images/feature-1.jpg';
 import feature1 from './assets/images/feature-2.jpg';
 import portfolioimg from './assets/images/portfolio/portfolio-1.png';
@@ -7,8 +27,31 @@ import ind3 from './assets/images/industry/3.png';
 import ind4 from './assets/images/industry/4.png';
 import ind5 from './assets/images/industry/5.png';
 
+export {Logo,logoWhite,stepsleftdot,stepsrightdot,globe,pattern1,icon1,icon2,icon3,about1,about2,about3,about4,processImg};
 
-let FeatureData = [
+export let MainSlideData = [
+    {
+        title : 'Web Development',
+        text : 'Requirments analysis<br /> Consulting your ideas <br /> Providing our inputs <br /> Latest trend awareness <br /> Competitive Pricing  <br />Engagement Model selection',
+        url : '/contact-us',
+        img : slider1
+    },
+    {
+        title : 'Mobile Application',
+        text : 'Requirments analysis<br/> Consulting your ideas <br/> Providing our inputs <br/> Latest trend awareness <br/> Competitive Pricing  <br/>Engagement Model selection',
+        url : '/contact-us',
+        img : slider2
+    },
+    {
+        title : 'UI/UX Design',
+        text : 'Requirments analysis<br/> Consulting your ideas <br/> Providing our inputs <br/> Latest trend awareness <br/> Competitive Pricing  <br/>Engagement Model selection',
+        url : '/contact-us',
+        img : slider3
+    }
+     
+]
+
+export let FeatureData = [
     {
         img : feature,
         title : 'TOP 10',
@@ -23,7 +66,7 @@ let FeatureData = [
     }
 ]
 
-let serviceData = [
+export let serviceData = [
     {
         iconClass : 'icon flaticon-responsive',
         title : 'UI/UX Development',
@@ -51,7 +94,7 @@ let serviceData = [
      
 ]
 
-let PortfolioData = [
+export let PortfolioData = [
     {
         id : 1,
         name : '1 ENJOY STEM',
@@ -103,7 +146,7 @@ let PortfolioData = [
      
 ]
 
-let GalleryData = [
+export let GalleryData = [
     {
         img : ind1,
         title : 'RETAIL & E-COMMERCE',
@@ -132,4 +175,3 @@ let GalleryData = [
      
 ];
 
-export {FeatureData,serviceData,PortfolioData,GalleryData}

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import {Container,Row,Col} from 'react-bootstrap';
 import { Markup } from 'interweave';
-import $ from 'jquery' // node module
+// import $ from 'jquery' // node module
 
 class WebButton extends Component{	  
     render(){     		

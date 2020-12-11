@@ -1,39 +1,23 @@
 import React, {Component} from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
-import MainSlider from './MainSlider';
-import {PortfolioSec} from './Portfolio';
-import {FeatureData,serviceData} from './WebData';
-import {WebButton,SecHeading, Feature, ServiceCard} from './WebBase';
-import Testimonials from './Testimonials';
+import MainSlider from '../components/MainSlider';
+import PortfolioSec from '../components/PortfolioSec';
+import {WebButton,SecHeading, Feature, ServiceCard} from '../components/WebBase';
+import {FeatureData,serviceData} from '../WebData';
+import Testimonials from '../components/Testimonials';
+import {stepsleftdot,stepsrightdot, globe,pattern1,icon1,icon2,icon3,about1,about2,about3,about4,processImg  } from '../WebData';
 
-import stepsleftdot from './assets/images/steps-leftdot.png';
-import stepsrightdot from './assets/images/Steps-rightdot.png';
-import globe from './assets/images/globe.png';
-import pattern1 from './assets/images/pattern-1.png';
-import icon1 from './assets/images/icon-1.png';
-import icon2 from './assets/images/icon-2.png';
-import icon3 from './assets/images/icon-3.png';
-import about1 from './assets/images/about-1.jpg';
-import about2 from './assets/images/about-2.jpg';
-import about3 from './assets/images/about-3.jpg';
-import about4 from './assets/images/about-4.jpg';
-import processImg from './assets/images/process.png';
+const svgstyle = {
+    background: 'new 0 0 512 512',
+};
+const svgstyle2 = {
+    background: 'new 0 0 122.88 84.13',
+};
+const svgstyle3 = {
+    background: 'new 0 0 25.925 25.925',
+};
 
-
-
- const svgstyle = {
-      background: 'new 0 0 512 512',
-    };
- const svgstyle2 = {
-      background: 'new 0 0 122.88 84.13',
-    };
- const svgstyle3 = {
-      background: 'new 0 0 25.925 25.925',
-	};
-	
-
-
-class Home extends Component{	
+class Home extends Component{		
     render(){
        return (<>
         <MainSlider/>

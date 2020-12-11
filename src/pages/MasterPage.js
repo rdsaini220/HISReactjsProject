@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {InnerArea,MainServiceSec,TechnologyLogos} from './WebBase';
-import {PortfolioSec} from './Portfolio';
-import {ContactForm} from './Contact';
-import { IndustriesSec } from './About';
-import { Technology_logo } from './WebPageData';
+import PortfolioSec from '../components/PortfolioSec';
+import {ContactForm} from '../pages/Contact';
+import { IndustriesSec } from '../pages/About';
+import {InnerArea,MainServiceSec,TechnologyLogos} from '../components/WebBase';
+import { Technology_logo } from '../WebPageData';
 import { Markup } from 'interweave';
 
 

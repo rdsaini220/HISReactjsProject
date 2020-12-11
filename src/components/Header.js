@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar, Container,Row,Col} from 'react-bootstrap';
-import {WebButton} from './WebBase';
-import $ from 'jquery' // node module
-import Logo from './assets/images/logo.png';
 import {SyncLoader} from "react-spinners";
+import $ from 'jquery' // node module
+import {WebButton} from '../components/WebBase';
+import {Logo} from '../WebData';
 
 
 

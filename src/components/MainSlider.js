@@ -5,10 +5,7 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import { Markup } from 'interweave';
-import slider1 from './assets/images/banners/slider-1.png';
-import slider2 from './assets/images/banners/slider-2.png';
-import slider3 from './assets/images/banners/slider-3.png';
-// import React, {Component,Fragment} from 'react';
+import {MainSlideData} from '../WebData';
 
 var sliderstyle = {
     paddingTop: '200px',
@@ -22,28 +19,6 @@ var settings = {
     slidesToShow: 1,
     slidesToScroll: 1
   };
-
-let SlideData = [
-    {
-        title : 'Web Development',
-        text : 'Requirments analysis<br /> Consulting your ideas <br /> Providing our inputs <br /> Latest trend awareness <br /> Competitive Pricing  <br />Engagement Model selection',
-        url : '/contact-us',
-        img : slider1
-    },
-    {
-        title : 'Mobile Application',
-        text : 'Requirments analysis<br/> Consulting your ideas <br/> Providing our inputs <br/> Latest trend awareness <br/> Competitive Pricing  <br/>Engagement Model selection',
-        url : '/contact-us',
-        img : slider2
-    },
-    {
-        title : 'UI/UX Design',
-        text : 'Requirments analysis<br/> Consulting your ideas <br/> Providing our inputs <br/> Latest trend awareness <br/> Competitive Pricing  <br/>Engagement Model selection',
-        url : '/contact-us',
-        img : slider3
-    }
-     
-]
 
 const Slideitem = (props) => {
     return (<>
@@ -86,7 +61,7 @@ class MainSlider extends Component{
 
 			 	<Slider {...settings}  className={"owl-theme slide carousel-fade backd"} style={sliderstyle} >
 					{
-                            SlideData.map((val,index) => {
+                            MainSlideData.map((val,index) => {
                                 return <Slideitem extraClass="servicePage" title={val.title} url={val.url}  img={val.img} ><Markup content={val.text} ></Markup> </Slideitem>
                             })
                     }

@@ -1,12 +1,8 @@
 import React, {Component} from 'react';
-import {InnerArea} from './WebBase';
 import {Container,Row,Col} from 'react-bootstrap';
-import {WebButton, SecHeading ,PortfolioCard} from './WebBase';
+import {WebButton, SecHeading ,PortfolioCard} from '../components/WebBase';
 import $ from 'jquery' // node module
 import {SyncLoader} from "react-spinners";
-
-var heading = "Our Portfolio";
-
 
 class PortfolioSec extends Component {
     constructor(props){
@@ -62,10 +58,10 @@ class PortfolioSec extends Component {
              this.fetchDataCat();
         }
     }	
+
     render(){
-    return (<>
-            {
-               
+        return (<>
+                {               
                     <section className="portfolio">
                         <Container>
                             <Row>
@@ -76,7 +72,7 @@ class PortfolioSec extends Component {
                             </Row>
                             <Row>
                                 {
-                                    this.state.PortfolioData.length > 0 ? (
+                                    this.state.PortfolioData ? (
                                         this.state.pegePorrtfolio && this.props.category_id ? ( 
                                                 this.state.pegePorrtfolio.map((val,index) => {
                                                     return <PortfolioCard name={val.name} url={val.url} image={this.state.path + val.image}  description={val.description} />
@@ -92,7 +88,7 @@ class PortfolioSec extends Component {
                             <Row>
                                 <Col md={12} className="text-center pt-5 view_more_portfolio">
                                     {
-                                        this.state.PortfolioData.length > 6 ? (
+                                        this.state.PortfolioData ? (
                                             this.props.loadMore ? (
                                                 <button id='loadMore' className="loadMore btn place-order button btnprimary" onClick={this.onLoadMore} >Load More Portfolio</button>
                                             ):(
@@ -112,27 +108,9 @@ class PortfolioSec extends Component {
                             </Row>
                         </Container>
                     </section>
-            }
-            
-        </>)}
+                }
+            </>)
+        }
 };
 
-class Portfolio extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            loadMore : this.props.loadMore
-        }
-    };
-    render(){   
-       return (<>
-            <InnerArea ineerheading={heading} />
-            <PortfolioSec loadMore={this.state.loadMore} />   
-            <div className="clearfix"></div>
-    	</>
-    )};
-
-}
-
-export {Portfolio, PortfolioSec};
-
+export default PortfolioSec;

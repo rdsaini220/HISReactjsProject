@@ -1,13 +1,8 @@
 import React, {Component} from 'react';
-import {NavLink} from 'react-router-dom';
-import {InnerArea} from './WebBase';
-import {Container,Row,Col} from 'react-bootstrap';
+import {Container,Row} from 'react-bootstrap';
+import {InnerArea,ServiceCard} from '../components/WebBase';
+import {serviceData} from '../WebData';
 
-import {serviceData} from './WebData';
-import {WebButton,SecHeading, ServiceCard} from './WebBase';
-
-// import {PortfolioData} from './WebData';
-// import {WebButton,SecHeading ,PortfolioCard} from './WebBase';
 var heading = "Our Portfolio";
 
 class Services extends Component{

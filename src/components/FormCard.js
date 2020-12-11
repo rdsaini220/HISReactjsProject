@@ -1,6 +1,4 @@
 import React, {Component, useState, useEffect} from 'react';
-// import {NavLink} from 'react-router-dom';
-// import $ from 'jquery' // node module
 const error = {
 	  color: "#dc3545",
 	  fontSize:"11px"

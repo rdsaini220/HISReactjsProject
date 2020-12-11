@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Container,Row} from 'react-bootstrap';
-import {InnerArea} from './WebBase';
-import FormCard from './FormCard';
+import {InnerArea} from '../components/WebBase';
+import FormCard from '../components/FormCard';
 var heading = "We Don't Just Build IT Solutions";
 
 class ContactForm extends Component{
